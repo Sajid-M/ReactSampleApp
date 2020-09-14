@@ -33,7 +33,7 @@ export default class LoginActivity extends React.Component {
         }; 
     } 
     
-    const [text, setText] = useState('');
+   
   
 
     render(){
@@ -63,8 +63,8 @@ export default class LoginActivity extends React.Component {
           </View>
           
           <TouchableOpacity style={styles.loginBtn}
-           //onPress={() => this.props.navigation.navigate('Profile')}  
-           onPress ={() => this.handleClick(this.state.email)}
+           onPress={() => this.props.navigation.navigate('Profile')}  
+           
                 >
             <Text style={styles.loginText}>LOGIN</Text>
                 
